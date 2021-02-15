@@ -39,6 +39,7 @@ native-image \
   -H:+ReportExceptionStackTraces \
   -H:+PrintClassInitialization \
   -Dspring.native.remove-yaml-support=true \
+  -Dspring.xml.ignore=false \
   -cp $CP $MAINCLASS >> output.txt
 
 #   --rerun-class-initialization-at-runtime=org.bouncycastle.jcajce.provider.drbg.DRBG$Default,org.bouncycastle.jcajce.provider.drbg.DRBG$NonceAndIV \

@@ -72,15 +72,7 @@
   "allDeclaredFields":true,
   "allDeclaredMethods":true,
   "allDeclaredConstructors":true,
-  "allDeclaredClasses":true,
-  "methods":[{"name":"main","parameterTypes":["java.lang.String[]"] }]
-},
-{
-  "name":"com.example.logback.LogbackApplication$$EnhancerBySpringCGLIB$$f7d2267e",
-  "allDeclaredFields":true,
-  "allDeclaredMethods":true,
-  "allDeclaredConstructors":true,
-  "fields":[{"name":"CGLIB$FACTORY_DATA"}]
+  "allDeclaredClasses":true
 },
 {
   "name":"com.fasterxml.jackson.core.JsonGenerator"
@@ -207,10 +199,6 @@
 {
   "name":"java.lang.Class",
   "allDeclaredMethods":true
-},
-{
-  "name":"java.lang.ClassLoader",
-  "methods":[{"name":"defineClass","parameterTypes":["java.lang.String","byte[]","int","int","java.security.ProtectionDomain"] }]
 },
 {
   "name":"java.lang.Class[]"
@@ -538,7 +526,6 @@
 },
 {
   "name":"org.springframework.beans.factory.BeanFactoryAware",
-  "allDeclaredMethods":true,
   "allPublicMethods":true
 },
 {
@@ -1408,7 +1395,7 @@
   "allPublicMethods":true
 },
 {
-  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$414/1238959340",
+  "name":"org.springframework.boot.validation.beanvalidation.MethodValidationExcludeFilter$$Lambda$413/77269878",
   "allDeclaredFields":true,
   "allDeclaredMethods":true
 },
@@ -1624,22 +1611,6 @@
   "name":"org.springframework.cache.interceptor.CacheAspectSupport"
 },
 {
-  "name":"org.springframework.cglib.core.MethodWrapper$MethodWrapperKey",
-  "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.cglib.core.MethodWrapper$MethodWrapperKey$$KeyFactoryByCGLIB$$552be97a",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
-  "name":"org.springframework.cglib.proxy.Enhancer$EnhancerKey",
-  "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.cglib.proxy.Enhancer$EnhancerKey$$KeyFactoryByCGLIB$$4ce19e8f",
-  "methods":[{"name":"<init>","parameterTypes":[] }]
-},
-{
   "name":"org.springframework.context.ApplicationContext"
 },
 {
@@ -1699,11 +1670,6 @@
 {
   "name":"org.springframework.context.annotation.Configuration",
   "allDeclaredMethods":true
-},
-{
-  "name":"org.springframework.context.annotation.ConfigurationClassEnhancer$EnhancedConfiguration",
-  "allDeclaredMethods":true,
-  "allPublicMethods":true
 },
 {
   "name":"org.springframework.context.annotation.ConfigurationClassPostProcessor",
@@ -1829,6 +1795,10 @@
     {"name":"addPrinter","parameterTypes":["org.springframework.format.Printer"] }, 
     {"name":"setEmbeddedValueResolver","parameterTypes":["org.springframework.util.StringValueResolver"] }
   ]
+},
+{
+  "name":"org.springframework.graalvm.utils.LiteConfigurationInitializer",
+  "methods":[{"name":"<init>","parameterTypes":[] }]
 },
 {
   "name":"org.springframework.http.ReactiveHttpInputMessage"
