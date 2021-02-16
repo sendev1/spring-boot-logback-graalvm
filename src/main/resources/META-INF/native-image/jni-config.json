@@ -1,5 +1,12 @@
 [
 {
+  "name":"java.lang.ClassLoader",
+  "methods":[{"name":"loadClass","parameterTypes":["java.lang.String"] }]
+},
+{
+  "name":"java.net.FactoryURLClassLoader"
+},
+{
   "name":"sun.management.VMManagementImpl",
   "fields":[
     {"name":"bootClassPathSupport"}, 
