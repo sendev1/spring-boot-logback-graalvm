@@ -28,8 +28,7 @@ echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
 native-image \
   --no-server \
   --no-fallback \
-   --install-exit-handlers \
-  --allow-incomplete-classpath \
+  --install-exit-handlers \
   --enable-all-security-services \
   --verbose \
   -H:Name=$ARTIFACT \
@@ -39,8 +38,10 @@ native-image \
   -Dspring.native.mode=agent \
   -Dspring.native.remove-yaml-support=true \
   -Dspring.xml.ignore=false \
+  -Dspring.native.verbose=true \
   -cp $CP $MAINCLASS
 
+#   --allow-incomplete-classpath \
 #   --report-unsupported-elements-at-runtime \
 #  --initialize-at-build-time=org.springframework.util.unit.DataSize \
 #   --report-unsupported-elements-at-runtime \
