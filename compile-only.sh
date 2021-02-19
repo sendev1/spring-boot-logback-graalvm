@@ -28,6 +28,8 @@ echo "Compiling $ARTIFACT with $GRAALVM_VERSION"
 native-image \
   --no-server \
   --no-fallback \
+  -H:Debug=2 \
+  -H:Optimize=0 \
   --install-exit-handlers \
   --enable-all-security-services \
   --verbose \

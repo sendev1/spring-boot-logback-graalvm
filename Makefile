@@ -21,3 +21,11 @@ run:
 
 runJar:
 	java -jar ./build/libs/logback-0.0.1-SNAPSHOT.war
+
+build-docker:
+	docker build \
+		-f Dockerfile \
+		-t logback-test:0.1 .
+
+run-docker:
+	docker run --rm -it -p 8080:8080 logback-test:0.1 /bin/bash
